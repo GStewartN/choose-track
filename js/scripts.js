@@ -19,16 +19,18 @@ var designType2 = $("input:radio[name=designtype]:checked").val();
 
 
 
-
 $(document).ready(function() {
-  $("div#radio").submit(function(event) {
+  $("#submit").click(function(event) {
     event.preventDefault();
 
-    if (workStyle1 && creativityStyle2 && designType2) {
+
+    if (workStyle1 === "true" && creativityStyle2 === "true") {
       $("#ruby").show();
-    } else if (workStyle2 && creativityStyle3 && businessStyle1) {
-      $("#c-net").show();
-    } else if (workStyle1 && visualize1 && designType1) {
+    //} else if (workStyle2 === "true" && creativityStyle3 === "true") {
+      //$("#c-net").show();
+    //} else if (workStyle1 === "true" && visualize1 === "true") {
+      //$("#css").show();
+    } else {
       $("#css").show();
     }
 
