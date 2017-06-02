@@ -28,8 +28,7 @@ $(document).ready(function() {
    } else {
      $("#many-tracks").show();
    }
-   //$(".radio").children(input).first().click(function() {
-     //$(this).remove();
+
     event.preventDefault();
   });
 });
