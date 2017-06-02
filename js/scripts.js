@@ -21,18 +21,14 @@ var designType2 = $("input:radio[name=designtype]:checked").val();
 
 $(document).ready(function() {
   $("#submit").click(function(event) {
-    event.preventDefault();
+
 
 
     if (workStyle1 === "true" && creativityStyle2 === "true") {
       $("#ruby").show();
-    //} else if (workStyle2 === "true" && creativityStyle3 === "true") {
-      //$("#c-net").show();
-    //} else if (workStyle1 === "true" && visualize1 === "true") {
-      //$("#css").show();
     } else {
-      $("#css").show();
+     $("#css").show();
     }
-
+    event.preventDefault();
   });
 });
