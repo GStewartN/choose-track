@@ -24,17 +24,20 @@ $(document).ready(function() {
     var creativityStyle2 = $("input:radio[name=creativitystyle]:checked").val();
     var designType1 = $("input:radio[name=designtype]:checked").val();
     var businessStyle1 = $("input:radio[name=businessstyle]:checked").val();
+    var workStyle3 = $("input:radio[name=workstyle]:checked").val();
+    var visualize1 = $("input:radio[name=visualization]:checked").val();
 
-    if (creativityStyle2) {
+    if (workStyle3 && creativityStyle2) {
       $("#ruby").show();
-    } else if (designType1) {
+    } else if (visualize1 && designType1) {
      $("#css").show();
    } else if (businessStyle1) {
      $("#php").show();
    } else {
      $("#many-tracks").show();
    }
-
+   //$(".radio").children(input).first().click(function() {
+     //$(this).remove();
     event.preventDefault();
   });
 });
