@@ -24,13 +24,13 @@ $(document).ready(function() {
   $("div#radio").submit(function(event) {
     event.preventDefault();
 
-    if (workStyle1 === "true" && creativityStyle2 === "true" && designType2 === "true") {
+    if (workStyle1 && creativityStyle2 && designType2) {
       $("#ruby").show();
-    } else if (workStyle2 === "true" && creativityStyle3 === "true" && businessStyle1 === "true") {
+    } else if (workStyle2 && creativityStyle3 && businessStyle1) {
       $("#c-net").show();
-    } else if (workStyle1 === "true" && visualize1 === "true" && designType1 === "true") {
+    } else if (workStyle1 && visualize1 && designType1) {
       $("#css").show();
     }
-    
+
   });
 });
