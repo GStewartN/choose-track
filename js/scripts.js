@@ -21,14 +21,28 @@ $(document).ready(function() {
 
     if (workStyle3 === "both" && creativityStyle2 === "interactive web apps" && businessStyle2 === "medium-sized business") {
       $("#ruby").show();
+      $("#css").hide();
+      $("#php").hide();
+      $("#many-tracks").hide();
     } else if (workStyle1 === "public" && visualize1 === "see my work" && designType1 === "look nice") {
      $("#css").show();
+     $("#ruby").hide();
+     $("#php").hide();
+     $("#many-tracks").hide();
    } else if (workStyle2 === "cubicle" && creativityStyle3 === "back-end software" && businessStyle1 === "large coorporation") {
      $("#php").show();
+     $("#css").hide();
+     $("#ruby").hide();
+     $("#many-tracks").hide();
    } else {
      $("#many-tracks").show();
+     $("#php").hide();
+     $("#ruby").hide();
+     $("#css").hide();
    }
 
     event.preventDefault();
+
+
   });
 });
