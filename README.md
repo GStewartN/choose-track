@@ -10,7 +10,7 @@ Weekly code review project for Epicodus Intro to Programming class. Create a web
 
 ## gh-pages link
 
-https://gstewartn.github.io/choose-track/
+
 
 ## Setup/Installation Requirements
 
