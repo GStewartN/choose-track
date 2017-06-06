@@ -1,16 +1,16 @@
-# _{choose-track}_
+# choose-track
 
-#### _{Webpage using Javascript/Jquery}, {06.02.2017}_
+#### Webpage using Javascript/Jquery, {06.02.2017
 
-#### By _**{Nathan Stewart}**_
+#### By Nathan Stewart
 
 ## Description
 
-_{Weekly code review project for Epicodus Intro to Programming class. Create a webpage that has user fill out a form, then suggests a programming track at Epicodus. The project is designed to showcase javascript and jquery skills. }_
+Weekly code review project for Epicodus Intro to Programming class. Create a webpage that has user fill out a form, then suggests a programming track at Epicodus. The project is designed to showcase javascript and jquery skills. 
 
 ## gh-pages link
 
-
+https://gstewartn.github.io/choose-track/
 
 ## Setup/Installation Requirements
 
@@ -30,4 +30,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. *
 
-Copyright &copy(c) 2017 Nathan Stewart
+Copyright (c) 2017 Nathan Stewart
