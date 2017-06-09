@@ -1,48 +1,23 @@
 $(document).ready(function() {
   $("#submit").click(function(event) {
+    event.preventDefault();
+    $("#hidden").hide();
 
-    var workStyle1 = $("input:radio[name=workstyle]:checked").val();
-    var workStyle2 = $("input:radio[name=workstyle]:checked").val();
-    var workStyle3 = $("input:radio[name=workstyle]:checked").val();
+    var workStyle = $("input:radio[name=workstyle]:checked").val();
+    var creativityStyle = $("input:radio[name=creativitystyle]:checked").val();
+    var businessStyle = $("input:radio[name=businessstyle]:checked").val();
+    var visualize = $("input:radio[name=visualization]:checked").val();
+    var designType = $("input:radio[name=designstyle]:checked").val();
+    
 
-    var creativityStyle1 = $("input:radio[name=creativitystyle]:checked").val();
-    var creativityStyle2 = $("input:radio[name=creativitystyle]:checked").val();
-    var creativityStyle3 = $("input:radio[name=creativitystyle]:checked").val();
-
-    var businessStyle1 = $("input:radio[name=businessstyle]:checked").val();
-    var businessStyle2 = $("input:radio[name=businessstyle]:checked").val();
-    var businessStyle3 = $("input:radio[name=businessstyle]:checked").val();
-
-    var visualize1 = $("input:radio[name=visualization]:checked").val();
-    var visualize2 = $("input:radio[name=visualization]:checked").val();
-
-    var designType1 = $("input:radio[name=designstyle]:checked").val();
-    var designType2 = $("input:radio[name=designstyle]:checked").val();
-
-    if (workStyle3 === "both" && creativityStyle2 === "interactive web apps" && businessStyle2 === "medium-sized business") {
+    if (workStyle === "both" && creativityStyle === "interactive web apps" && businessStyle === "medium-sized business") {
       $("#ruby").show();
-      $("#css").hide();
-      $("#php").hide();
-      $("#many-tracks").hide();
-    } else if (workStyle1 === "public" && visualize1 === "see my work" && designType1 === "look nice") {
+    } else if (workStyle === "public" && visualize === "see my work" && designType === "look nice") {
      $("#css").show();
-     $("#ruby").hide();
-     $("#php").hide();
-     $("#many-tracks").hide();
-   } else if (workStyle2 === "cubicle" && creativityStyle3 === "back-end software" && businessStyle1 === "large coorporation") {
+   } else if (workStyle === "cubicle" && creativityStyle === "back-end software" && businessStyle === "large coorporation") {
      $("#php").show();
-     $("#css").hide();
-     $("#ruby").hide();
-     $("#many-tracks").hide();
    } else {
      $("#many-tracks").show();
-     $("#php").hide();
-     $("#ruby").hide();
-     $("#css").hide();
    }
-
-    event.preventDefault();
-
-
   });
 });
