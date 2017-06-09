@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $("#submit").click(function(event) {
-    event.preventDefault();
+    
     $("#hidden").hide();
 
     var workStyle = $("input:radio[name=workstyle]:checked").val();
@@ -19,5 +19,6 @@ $(document).ready(function() {
    } else {
      $("#many-tracks").show();
    }
+   event.preventDefault();
   });
 });
