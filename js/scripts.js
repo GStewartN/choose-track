@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $("#submit").click(function(event) {
     
-    $("#hidden").hide();
+    //$("#hidden").hide();
 
     var workStyle = $("input:radio[name=workstyle]:checked").val();
     var creativityStyle = $("input:radio[name=creativitystyle]:checked").val();
